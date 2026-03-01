@@ -1,8 +1,8 @@
 # Gamification Demo UI
 
-Minimal **Next.js** demo for the [gamification-core](https://github.com) API. Use it to list quests, report events, view user progress, and claim rewards — no authentication; you supply a `user_id` in the UI.
+Minimal **Next.js** demo for the [gamification-core](https://github.com/meetrakib/gamification-core) API. Use it to list quests, report events, view user progress, and claim rewards — no authentication; you supply a `user_id` in the UI.
 
-Part of the [Gamification & Mini Exchange](https://github.com) ecosystem. The backend lives in **gamification-core** (separate repo).
+Part of the Gamification & [Mini Exchange](https://github.com/meetrakib/mini-derivatives-exchange) ecosystem. The backend lives in **gamification-core** (separate repo).
 
 ---
 
