@@ -1,0 +1,20 @@
+# Dev only: hot reload via volume mounts.
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gamification-demo-ui
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+      - WATCHPACK_POLLING=true
+    volumes:
+      # Mount app code so changes reflect without rebuild
+      - .:/app
+      # Prevent overwriting node_modules from host
+      - /app/node_modules
+    restart: unless-stopped
